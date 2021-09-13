@@ -195,13 +195,13 @@
 	pointer-events: none;
 	transition: all 0.5s ease;
 }
-.logo_content .logo i{
-	font-size: 28px;
-	margin-right: 5px;
-}
 .logo_content .logo .logo_name{
-	font-size: 20px;
-	font-weight: 400;
+	width: 97%;
+	height: 45px;
+	background-image: url("Logo SBC negro 2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .sidebar #btn{
 	position: absolute;
