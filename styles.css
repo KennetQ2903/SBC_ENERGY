@@ -23,7 +23,7 @@
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.6);
 	margin-top: 15vh;
-	height: calc(460px - 30px);
+	height: calc(100% - 400px);
 	width: calc(400px - 30px);
 	min-height: calc(460px - 30px);
 	z-index: 100;
