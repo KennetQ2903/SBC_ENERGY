@@ -115,7 +115,7 @@
 }
 #blank3{
 	height: calc(100px - 60px);
-	/*min-height: 5vh;*/
+	min-height: calc(100px - 60px);
 	width: 100%;
 	z-index: 104;
 	justify-content: center;
