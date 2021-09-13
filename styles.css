@@ -30,11 +30,16 @@
 }
 
 #tituloLogin{
-	height: 6vh;
+	height: 13vh;
 	width: 100%;
 	margin-top: 0;
 	z-index: 104;
 	justify-content: center;
+
+	background-image: url("Logo SBC negro 2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 #tit{
 	margin-top: 0;
@@ -50,7 +55,7 @@
 	justify-content: center;
 }
 #blank1{
-	height: 7vh;
+	height: 3vh;
 	width: 100%;
 	z-index: 104;
 	justify-content: center;
