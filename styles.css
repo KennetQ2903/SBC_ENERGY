@@ -12,6 +12,7 @@
 	width: 100%;
 }
 #padreLogin{
+	position: absolute;
 	height: 100%;
 	width: 100%;
 	align-items: center;
@@ -22,8 +23,8 @@
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.6);
 	margin-top: 15vh;
-	height: 440px;
-	width: 450px;
+	height: 70vh;
+	width: calc(400px - 30px);
 	z-index: 100;
 	display:  block;
 	top:  5%;
