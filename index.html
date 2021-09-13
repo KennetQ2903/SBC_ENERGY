@@ -7,7 +7,7 @@
 	<script src="codigo.js"></script>
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body onload="title()">
 	<div class="fondo" id="fondoLoginDiv">
 	
 	</div>
@@ -55,7 +55,9 @@
 </body>
 
 <script>
-	window.document.title = "Inicio de sesion"
+	function title(){
+		window.document.title = "Inicio de sesion"
+	}
 </script>
 </html>
 
