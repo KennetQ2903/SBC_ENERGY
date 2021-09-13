@@ -114,8 +114,8 @@
 	font-family:  "Yu Gothic Light", sans-serif;
 }
 #blank3{
-	height: 5vh;
-	min-height: 5vh;
+	height: calc(100px - 60px);
+	/*min-height: 5vh;*/
 	width: 100%;
 	z-index: 104;
 	justify-content: center;
