@@ -1,0 +1,22 @@
+function getInputs(){
+	let user = document.getElementById('userNameInput').value;
+	let pass = document.getElementById('contraseñaInput').value;
+	let warn = document.getElementById('warningUser');
+	if(user == 'admin_' && pass == 'admin_1234'){
+		dashboard();
+	}
+	if(user != 'admin_' || pass != 'admin_1234'){
+		warn.classList.remove('Off');
+		warn.classList.add('On');
+		document.getElementById('contraseñaInput').value = "";
+	}
+	else{
+		warn.classList.remove('On');
+		warn.classList.add('Off');
+	}
+}
+
+function dashboard()
+{
+	location.href="Dashboard.html";
+}

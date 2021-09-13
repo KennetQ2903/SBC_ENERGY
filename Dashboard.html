@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard</title>
+	<script src="codigo.js"></script>
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="bodyMenu">
+	<div class="sidebar">
+		<div class="logo_content">
+			<div class="logo">
+				<i class='bx bxl-sketch'></i>
+				<div class="logo_name">
+					SBC_ENERGY
+				</div>
+			</div>
+			<i class='bx bx-menu' id="btn"></i>
+		</div>
+		<ul class="nav_list" style="list-style-type: none;">
+			<li>
+				<a href="#">
+					<i class='bx bx-grid-alt'></i>
+					<span class="links_name">Dashboard</span>
+				</a>
+				<span class="tooltip">Dashboard</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-user'></i>
+					<span class="links_name">User</span>
+				</a>
+				<span class="tooltip">User</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Messages</span>
+				</a>
+				<span class="tooltip">Messages</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-pie-chart-alt-2'></i>
+					<span class="links_name">Analytics</span>
+				</a>
+				<span class="tooltip">Analytics</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-folder'></i>
+					<span class="links_name">File manager</span>
+				</a>
+				<span class="tooltip">File manager</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-cart'></i>
+					<span class="links_name">Order</span>
+				</a>
+				<span class="tooltip">Order</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-heart'></i>
+					<span class="links_name">Saved</span>
+				</a>
+				<span class="tooltip">Saved</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-cog'></i>
+					<span class="links_name">Settings</span>
+				</a>
+				<span class="tooltip">Settings</span>
+			</li>
+		</ul>
+		<div class="profile_content">
+			<div class="profile">
+				<div class="profile_details">
+					<img src="user_icon.png">
+					<div class="name_job">
+						<div class="name">admin_</div>
+						<div class="job">Administrator</div>
+					</div>
+				</div>
+				<i class='bx bx-log-out' id="log_out"></i>
+			</div>
+		</div>
+	</div>
+
+	<div class="home_content">
+		<div class="text">
+			Contenido del menu
+		</div>
+	</div>
+
+	<script>
+		let btn = document.querySelector('#btn');
+		let sidebar = document.querySelector('.sidebar');
+
+		btn.onclick = function(){
+			sidebar.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>
