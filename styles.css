@@ -25,6 +25,7 @@
 	margin-top: 15vh;
 	height: calc(460px - 30px);
 	width: calc(400px - 30px);
+	min-height: calc(460px - 30px);
 	z-index: 100;
 	display:  block;
 	top:  5%;
@@ -114,6 +115,7 @@
 }
 #blank3{
 	height: 5vh;
+	min-height: 5vh;
 	width: 100%;
 	z-index: 104;
 	justify-content: center;
