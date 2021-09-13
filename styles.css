@@ -236,6 +236,7 @@
 	opacity: 0;
 	pointer-events: none;
 	display: block;
+	z-index: 150;
 }
 
 .active ul li .tooltip{
@@ -313,6 +314,7 @@
 	object-fit: cover;
 	border-radius: 12px;
 	margin-top: 5px;
+	margin-left: 5px;
 }
 .profile .profile_details .name_job{
 	margin-left: 10px;
@@ -347,14 +349,115 @@
 	width: calc(100% - 78px);
 	left: 78px;
 	transition: all 0.5s ease;
-}
-.home_content .text{
-	font-size: 25px;
-	font-weight: 500;
-	color: #1d1b31;
-	margin: 12px;
+	background: skyblue;
+	z-index: -10;
 }
 .active ~ .home_content{
 	width: calc(100% - 240px);
 	left: 240px;
+}
+
+
+
+
+.home_content .menuDashboard{
+	position: absolute;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+	background: greenyellow;
+}
+
+.home_content .menuUsuario{
+	position: absolute;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+	background: deepskyblue;
+}
+.home_content .menuCuentas{
+	position: absolute;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+	background: indianred;
+}
+.home_content .menuSuministros{
+	position: absolute;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+	background: yellow;
+}
+.home_content .menuConsumo{
+	position: absolute;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+	background: gray;
+}
+
+.home_content .menuNegocios{
+	position: absolute;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+	background: purple;
+}
+.home_content .menuFacturacion{
+	position: absolute;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+	background: seagreen;
+}
+.home_content .menuBancos{
+	position: absolute;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+	background: burlywood;
+}
+.home_content .menuCorreos{
+	position: absolute;
+	font-size: 25px;
+	font-weight: 500;
+	color: #1d1b31;
+	margin: 12px;
+	height: 100vh;
+	width: calc(100% - 27px);
+	background: pink;
+}
+
+.select{
+	opacity: 1;
+	z-index: 100;
+}
+.unselect{
+	opacity: 0;
+	z-index: -100;
 }

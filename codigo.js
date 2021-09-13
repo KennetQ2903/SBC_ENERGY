@@ -20,3 +20,4 @@ function dashboard()
 {
 	location.href="Dashboard.html";
 }
+

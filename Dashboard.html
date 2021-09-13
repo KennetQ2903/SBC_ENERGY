@@ -8,13 +8,14 @@
 	<script src="codigo.js"></script>
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
+<!-- -----------------------------------------MENU DESLIZABLE--------------------------------------- -->
 <body class="bodyMenu">
 	<div class="sidebar">
 		<div class="logo_content">
 			<div class="logo">
-				<i class='bx bxl-sketch'></i>
+				<i class='bx bx-cloud-lightning'></i>
 				<div class="logo_name">
-					SBC_ENERGY
+					SBC ENERGY
 				</div>
 			</div>
 			<i class='bx bx-menu' id="btn"></i>
@@ -22,59 +23,66 @@
 		<ul class="nav_list" style="list-style-type: none;">
 			<li>
 				<a href="#">
-					<i class='bx bx-grid-alt'></i>
+					<i class='bx bx-grid-alt' id="btnDashboard" onclick="actual(this)"></i>
 					<span class="links_name">Dashboard</span>
 				</a>
 				<span class="tooltip">Dashboard</span>
 			</li>
 			<li>
 				<a href="#">
-					<i class='bx bx-user'></i>
-					<span class="links_name">User</span>
+					<i class='bx bx-user' id="btnUser" onclick="actual(this)"></i>
+					<span class="links_name">Usuario</span>
 				</a>
-				<span class="tooltip">User</span>
+				<span class="tooltip">Usuario</span>
 			</li>
 			<li>
 				<a href="#">
-					<i class='bx bx-chat'></i>
-					<span class="links_name">Messages</span>
+					<i class='bx bxs-group' id="btnGroup" onclick="actual(this)"></i>
+					<span class="links_name">Cuentas</span>
 				</a>
-				<span class="tooltip">Messages</span>
+				<span class="tooltip">Cuentas</span>
 			</li>
 			<li>
 				<a href="#">
-					<i class='bx bx-pie-chart-alt-2'></i>
-					<span class="links_name">Analytics</span>
+					<i class='bx bxs-archive-in' id="btnSuministros" onclick="actual(this)"></i>
+					<span class="links_name">Suministros</span>
 				</a>
-				<span class="tooltip">Analytics</span>
+				<span class="tooltip">Suministros</span>
 			</li>
 			<li>
 				<a href="#">
-					<i class='bx bx-folder'></i>
-					<span class="links_name">File manager</span>
+					<i class='bx bx-plug' id="btnConsumo" onclick="actual(this)"></i>
+					<span class="links_name">Consumo</span>
 				</a>
-				<span class="tooltip">File manager</span>
+				<span class="tooltip">Consumo</span>
 			</li>
 			<li>
 				<a href="#">
-					<i class='bx bx-cart'></i>
-					<span class="links_name">Order</span>
+					<i class='bx bxs-briefcase-alt-2' id="btnNegocio" onclick="actual(this)"></i>
+					<span class="links_name">Negocios</span>
 				</a>
-				<span class="tooltip">Order</span>
+				<span class="tooltip">Negocios</span>
 			</li>
 			<li>
 				<a href="#">
-					<i class='bx bx-heart'></i>
-					<span class="links_name">Saved</span>
+					<i class='bx bxs-receipt' id="btnFacturacion" onclick="actual(this)"></i>
+					<span class="links_name">Facturacion</span>
 				</a>
-				<span class="tooltip">Saved</span>
+				<span class="tooltip">Facturacion</span>
 			</li>
 			<li>
 				<a href="#">
-					<i class='bx bx-cog'></i>
-					<span class="links_name">Settings</span>
+					<i class='bx bxs-dollar-circle' id="btnBancos" onclick="actual(this)"></i>
+					<span class="links_name">Cuentas bancarias</span>
 				</a>
-				<span class="tooltip">Settings</span>
+				<span class="tooltip">Bancos</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-envelope' id="btnCorreos" onclick="actual(this)"></i>
+					<span class="links_name">Plantillas de correo</span>
+				</a>
+				<span class="tooltip">Correo</span>
 			</li>
 		</ul>
 		<div class="profile_content">
@@ -90,12 +98,42 @@
 			</div>
 		</div>
 	</div>
+<!-- -----------------------------------------MENU DESLIZABLE--------------------------------------- -->
+
+
+	<!-- ------------------------------MENU PRINCIPAL (PANTALLA)-------------------------------------- -->
 
 	<div class="home_content">
-		<div class="text">
-			Contenido del menu
+		<div class="menuDashboard select" id="menuDashboard">
+			Menu Dashboard
+		</div>
+		<div class="menuUsuario unselect" id="menuUsuario">
+			Menu Usuario
+		</div>
+		<div class="menuCuentas unselect" id="menuCuentas">
+			Menu Cuentas
+		</div>
+		<div class="menuSuministros unselect" id="menuSuministros">
+			Menu Suministros
+		</div>
+		<div class="menuConsumo unselect" id="menuConsumo">
+			Menu Consumo
+		</div>
+		<div class="menuNegocios unselect" id="menuNegocios">
+			Menu Negocios
+		</div>
+		<div class="menuFacturacion unselect" id="menuFacturacion">
+			Menu Facturacion
+		</div>
+		<div class="menuBancos unselect" id="menuBancos">
+			Menu Bancos
+		</div>
+		<div class="menuCorreos unselect" id="menuCorreos">
+			Menu Correos
 		</div>
 	</div>
+
+	<!-- ------------------------------MENU PRINCIPAL (PANTALLA)-------------------------------------- -->
 
 	<script>
 		let btn = document.querySelector('#btn');
@@ -104,6 +142,61 @@
 		btn.onclick = function(){
 			sidebar.classList.toggle('active');
 		}
+
+		function actual(actualBtn){
+			let actualId = actualBtn.id;
+			let actualMenu;
+			switch(actualId){
+				case "btnDashboard":
+					actualMenu = "menuDashboard";
+				break;
+
+				case "btnUser":
+					actualMenu = "menuUsuario";
+				break;
+
+				case "btnGroup":
+					actualMenu = "menuCuentas";
+				break;
+
+				case "btnSuministros":
+					actualMenu = "menuSuministros";
+				break;
+
+				case "btnConsumo":
+					actualMenu = "menuConsumo";
+				break;
+
+				case "btnNegocio":
+					actualMenu = "menuNegocios";
+				break;
+
+				case "btnFacturacion":
+					actualMenu = "menuFacturacion";
+				break;
+
+				case "btnBancos":
+					actualMenu = "menuBancos";
+				break;
+
+				case "btnCorreos":
+					actualMenu = "menuCorreos";
+				break;
+			}
+			toggleClass(actualId, actualMenu);
+		}
+		function toggleClass(actualId, actualMenu){
+			let menu = document.getElementById(actualMenu);
+			if(menu.classList.contains('select')){
+				menu.classList.remove('select');
+				menu.classList.add('unselect');
+			}
+			if(menu.classList.contains('unselect')){
+				menu.classList.remove('unselect');
+				menu.classList.add('select');
+			}
+		}
+		
 	</script>
 
 </body>
