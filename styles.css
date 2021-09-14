@@ -26,6 +26,7 @@
 	height: calc(100% - 40%);
 	width: calc(100% - 5%);
 	max-width: 350px;
+	min-height: 400px;
 	z-index: 100;
 	display:  block;
 	top:  5%;
