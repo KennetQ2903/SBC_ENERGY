@@ -110,13 +110,20 @@
 	color: whitesmoke;
 	font-family:  "Yu Gothic Light", sans-serif;
 }
-#blank3{
-	height: 2vh;
-	min-height: 2vh;
+#warningUser{
+	font-size: 18px;
+	color: rgba(255, 0, 0, 1.0);
+	font-family:  "Yu Gothic Light", sans-serif;
+	height: 18px;
+	min-height: 18px;
 	width: 100%;
 	z-index: 104;
 	justify-content: center;
-	padding-left: 10%;
+	padding-left: 0;
+	position: relative;
+  display: flex;
+  align-items: center;
+  word-break:break-all;
 }
 
 #inputDiv{
@@ -129,8 +136,9 @@
 
 #btnLogin{
 	height: 6vh;
+	min-height: 25px;
 	width: 83%;
-	position: absolute;
+	position: relative;
 	left: 10%;
 	top: 15%;
 	border-radius: 30px;
@@ -140,14 +148,8 @@
 	font-size: 25px;
 	color: whitesmoke;
 	font-family:  "Yu Gothic Light", sans-serif;
-}
-
-#warningUser{
-	font-size: 18px;
-	color: rgba(255, 0, 0, 1.0);
-	font-family:  "Yu Gothic Light", sans-serif;
-	position: absolute;
-	top: calc(100% - 20vh);
+  align-items: center;
+  padding: 0;
 }
 .On{
 	visibility: visible;
