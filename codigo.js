@@ -45,7 +45,8 @@ function userEnter(event){
 	}
 }
 function dashboard(){
-	location.href="Dashboard.html";
+	window.close('index.html');
+	window.open('Dashboard.html');
 }
 
 
