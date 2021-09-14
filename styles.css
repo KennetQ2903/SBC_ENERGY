@@ -142,10 +142,11 @@
 }
 
 #warningUser{
-	background: red;
 	font-size: 18px;
 	color: rgba(255, 0, 0, 1.0);
 	font-family:  "Yu Gothic Light", sans-serif;
+	position: absolute;
+	top: calc(100% - 20vh);
 }
 .On{
 	visibility: visible;
