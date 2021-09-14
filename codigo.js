@@ -3,6 +3,8 @@ function getInputs(){
 	let pass = document.getElementById('contraseñaInput').value;
 	let warn = document.getElementById('warningUser');
 	if(user == 'admin_' && pass == 'admin_1234'){
+		document.getElementById('userNameInput').value = "";
+		document.getElementById('contraseñaInput').value = "";
 		dashboard();
 	}
 	if(user != 'admin_' || pass != 'admin_1234'){
@@ -42,8 +44,8 @@ function userEnter(event){
 		let pass = document.getElementById('contraseñaInput').focus();
 	}
 }
-function dashboard()
-{
+function dashboard(){
 	location.href="Dashboard.html";
 }
+
 

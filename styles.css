@@ -1,5 +1,5 @@
 .fondo{
-	background-image: url("fondoLogin.jpg");
+	background-image: url("./resources/fondoLogin.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -42,7 +42,7 @@
 	margin-top: 0;
 	z-index: 104;
 	justify-content: center;
-	background-image: url("Logo SBC negro 2.png");
+	background-image: url("./resources/Logo SBC negro 2.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -203,7 +203,7 @@
 .logo_content .logo .logo_name{
 	width: 97%;
 	height: 45px;
-	background-image: url("Logo SBC negro 2.png");
+	background-image: url("./resources/Logo SBC negro 2.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
