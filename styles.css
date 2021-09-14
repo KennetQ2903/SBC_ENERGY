@@ -23,38 +23,29 @@
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.6);
 	margin-top: 15vh;
-	height: calc(100% - 400px);
-	width: calc(400px - 30px);
-	min-height: calc(460px - 30px);
+	height: calc(100% - 40%);
+	width: calc(100% - 5%);
+	max-width: 350px;
 	z-index: 100;
 	display:  block;
 	top:  5%;
-}
-
-#tituloLogin{
-	height: 13vh;
-	width: 100%;
-	margin-top: 0;
-	z-index: 104;
-	justify-content: center;
-
-	background-image: url("Logo SBC negro 2.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#tit{
-	margin-top: 0;
-	text-align: center;
-	font-size: 30px;
-	color: whitesmoke;
-	font-family:  "Yu Gothic Light", sans-serif;
 }
 #blank2{
 	height: 2vh;
 	width: 100%;
 	z-index: 104;
 	justify-content: center;
+}
+#tituloLogin{
+	height: 13vh;
+	width: 100%;
+	margin-top: 0;
+	z-index: 104;
+	justify-content: center;
+	background-image: url("Logo SBC negro 2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 #blank1{
 	height: 3vh;
@@ -63,6 +54,7 @@
 	justify-content: center;
 }
 #tituloUserDiv{
+	position: relative;
 	height: 4vh;
 	width: 100%;
 	z-index: 104;
@@ -70,6 +62,7 @@
 	padding-left: 10%;
 }
 #titUser{
+	position: absolute;
 	margin-top: 0;
 	text-align: left;
 	font-size: 20px;
@@ -77,12 +70,14 @@
 	font-family:  "Yu Gothic Light", sans-serif;
 }
 #userDiv{
+	position: relative;
 	height: 8vh;
 	width: 100%;
 	z-index: 104;
 	justify-content: center;
 }
 #userNameInput{
+	position: absolute;
 	height: 5vh;
 	width: 80%;
 	position: relative;
@@ -99,6 +94,7 @@
 
 }
 #contraseñaInput{
+	position: absolute;
 	height: 5vh;
 	width: 80%;
 	position: relative;
@@ -114,8 +110,8 @@
 	font-family:  "Yu Gothic Light", sans-serif;
 }
 #blank3{
-	height: calc(100px - 60px);
-	min-height: calc(100px - 60px);
+	height: 2vh;
+	min-height: 2vh;
 	width: 100%;
 	z-index: 104;
 	justify-content: center;
@@ -146,6 +142,7 @@
 }
 
 #warningUser{
+	background: red;
 	font-size: 18px;
 	color: rgba(255, 0, 0, 1.0);
 	font-family:  "Yu Gothic Light", sans-serif;
