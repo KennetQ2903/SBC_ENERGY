@@ -1,6 +1,4 @@
 #menuDashboard{
-	display: block;
-	overflow: hidden;
 	align-items: center;
 }
 
@@ -21,18 +19,12 @@
 
 #dash1{
 	position: relative;
-	width: 100%;
-	height: 300px;
+	top: 20%;
+	width: 80%;
+	height: 350px;
+	margin: auto;
 	background: white;
-	overflow-y: scroll;
+	overflow: hidden;
 }
-#dash2{
-	width: 100%;
-	height: 300px;
-	background: pink;
-}
-#dash3{
-	width: 100%;
-	height: 300px;
-	background: red;
-}
+
+
