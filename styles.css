@@ -177,14 +177,14 @@
 	height: auto;
 	min-height: 100vh;
 	width: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
 	display: flex;
 }
 .sidebar{
-	position: relative;
+	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100vh;
+	height: 100%;
 	width:78px;
 	background: #1d1b31;
 	padding: 6px 14px;
@@ -375,7 +375,8 @@
 	left: 78px;
 	transition: all 0.5s ease;
 	background: skyblue;
-	overflow: hidden;
+	/*overflow: hidden;*/
+	display: block;
 }
 
 .active ~ .home_content{
@@ -389,8 +390,8 @@
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
-	margin: 12px;
-	height: 97vh;
+	margin: auto;
+	height: 100vh;
 	width: calc(100% - 27px);
 	background: greenyellow;
 	overflow: hidden;
@@ -398,7 +399,7 @@
 
 
 .home_content .menuUsuario{
-	position: absolute;
+	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
@@ -408,7 +409,7 @@
 	background: deepskyblue;
 }
 .home_content .menuCuentas{
-	position: absolute;
+	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
@@ -418,7 +419,7 @@
 	background: indianred;
 }
 .home_content .menuSuministros{
-	position: absolute;
+	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
@@ -428,7 +429,7 @@
 	background: yellow;
 }
 .home_content .menuConsumo{
-	position: absolute;
+	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
@@ -439,7 +440,7 @@
 }
 
 .home_content .menuNegocios{
-	position: absolute;
+	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
@@ -449,7 +450,7 @@
 	background: purple;
 }
 .home_content .menuFacturacion{
-	position: absolute;
+	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
@@ -459,7 +460,7 @@
 	background: seagreen;
 }
 .home_content .menuBancos{
-	position: absolute;
+	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
@@ -469,7 +470,7 @@
 	background: burlywood;
 }
 .home_content .menuCorreos{
-	position: absolute;
+	position: relative;
 	font-size: 25px;
 	font-weight: 500;
 	color: #1d1b31;
@@ -479,13 +480,11 @@
 	background: pink;
 }
 
-.select{
+/*.select{
 	visibility: visible;
 	opacity: 1;
-/*	z-index: 100;*/
 }
 .unselect{
 	visibility: hidden;
 	opacity: 0;
-	/*z-index: -100;*/
-}
+}*/

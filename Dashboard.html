@@ -8,10 +8,11 @@
 	<title>Dashboard</title>
 	<script src="codigo.js"></script>
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <!-- -----------------------------------------MENU DESLIZABLE--------------------------------------- -->
-<body class="bodyMenu">
-	<div class="sidebar">
+<body class="bodyMenu" onload="posInicial()">
+	<nav class="sidebar">
 		<div class="logo_content">
 			<div class="logo">
 				<div class="logo_name">
@@ -97,142 +98,146 @@
 				<i class='bx bx-log-out' id="log_out" onclick="logOut();"></i>
 			</div>
 		</div>
-	</div>
+	</nav>
 <!-- -----------------------------------------MENU DESLIZABLE--------------------------------------- -->
 
 
 	<!-- ------------------------------MENU PRINCIPAL (PANTALLA)-------------------------------------- -->
 
-	<div class="home_content">
+	<div class="home_content" id="home">
 
 
 
 
-	<div class="menuDashboard select" id="menuDashboard">
+		<div class="menuDashboard" id="menuDashboard">
 
-			<div id="titDashMenuDiv">
-				<h1 id="titDashMenuH">Dashboard</h1>
-			</div>
-		
-			<div id="dash1">
-			</div>
+				<div id="titDashMenuDiv">
+					<h1 id="titDashMenuH">Dashboard</h1>
+				</div>
+			
+				<div id="dash1">
 
-	</div>
+				</div>
 
+		</div>
 
-
-
-		<div class="menuUsuario unselect" id="menuUsuario">
+		<div class="menuUsuario" id="menuUsuario">
 			Menu Usuario
 		</div>
-		<div class="menuCuentas unselect" id="menuCuentas">
+
+		<div class="menuCuentas" id="menuCuentas">
 			Menu Cuentas
 		</div>
-		<div class="menuSuministros unselect" id="menuSuministros">
+
+		<div class="menuSuministros" id="menuSuministros">
 			Menu Suministros
 		</div>
-		<div class="menuConsumo unselect" id="menuConsumo">
+
+		<div class="menuConsumo" id="menuConsumo">
 			Menu Consumo
 		</div>
-		<div class="menuNegocios unselect" id="menuNegocios">
+
+		<div class="menuNegocios" id="menuNegocios">
 			Menu Negocios
 		</div>
-		<div class="menuFacturacion unselect" id="menuFacturacion">
+
+		<div class="menuFacturacion" id="menuFacturacion">
 			Menu Facturacion
 		</div>
-		<div class="menuBancos unselect" id="menuBancos">
+
+		<div class="menuBancos" id="menuBancos">
 			Menu Bancos
 		</div>
-		<div class="menuCorreos unselect" id="menuCorreos">
+
+		<div class="menuCorreos" id="menuCorreos">
 			Menu Correos
 		</div>
+
 	</div>
 
 	<!-- ------------------------------MENU PRINCIPAL (PANTALLA)-------------------------------------- -->
 
-	<script>
+	<script type="text/javascript">
 		let btn = document.querySelector('#btn');
 		let sidebar = document.querySelector('.sidebar');
 
 		btn.onclick = function(){
 			sidebar.classList.toggle('active');
 		}
+		function posInicial(){
+			$('html, body').animate({
+						scrollTop: $("#menuDashboard").offset().top
+					}, 500);
+		}
 
 		function actual(actualBtn){
 			let actualId = actualBtn.id;
-			let actualMenu;
 			switch(actualId){
 				case "btnDashboard":
-					actualMenu = "menuDashboard";
-					window.document.title = `Dashboard`;
+					$('html, body').animate({
+						scrollTop: $("#menuDashboard").offset().top
+					}, 500);
+					window.document.title = `Dashboard`;					
 				break;
 
 				case "btnUser":
-					actualMenu = "menuUsuario";
+
+					$('html, body').animate({
+						scrollTop: $("#menuUsuario").offset().top
+					}, 500);
+
 					window.document.title = `Usuario`;
+
 				break;
 
 				case "btnGroup":
-					actualMenu = "menuCuentas";
+					$('html, body').animate({
+						scrollTop: $("#menuCuentas").offset().top
+					}, 500);
 					window.document.title = `Cuentas`;
 				break;
 
 				case "btnSuministros":
-					actualMenu = "menuSuministros";
+					$('html, body').animate({
+						scrollTop: $("#menuSuministros").offset().top
+					}, 500);
 					window.document.title = `Suministros`;
 				break;
 
 				case "btnConsumo":
-					actualMenu = "menuConsumo";
+					$('html, body').animate({
+						scrollTop: $("#menuConsumo").offset().top
+					}, 500);
 					window.document.title = `Consumo`;
 				break;
 
 				case "btnNegocio":
-					actualMenu = "menuNegocios";
+					$('html, body').animate({
+						scrollTop: $("#menuNegocios").offset().top
+					}, 500);
 					window.document.title = `Negocios`;
 				break;
 
 				case "btnFacturacion":
-					actualMenu = "menuFacturacion";
+					$('html, body').animate({
+						scrollTop: $("#menuFacturacion").offset().top
+					}, 500);
 					window.document.title = `Facturacion`;
 				break;
 
 				case "btnBancos":
-					actualMenu = "menuBancos";
+					$('html, body').animate({
+						scrollTop: $("#menuBancos").offset().top
+					}, 500);
 					window.document.title = `Cuentas Bancarias`;
 				break;
 
 				case "btnCorreos":
-					actualMenu = "menuCorreos";
+					$('html, body').animate({
+						scrollTop: $("#menuCorreos").offset().top
+					}, 500);
 					window.document.title = `Correos`;
 				break;
-			}
-			toggleClass(actualMenu);
-		}
-		function toggleClass(actualMenu){
-			let menuEditado;
-			let menuDes;
-			const menuList =[
-			"menuDashboard", 
-			"menuUsuario", 
-			"menuCuentas", 
-			"menuSuministros", 
-			"menuConsumo",
-			"menuNegocios",  
-			"menuFacturacion", 
-			"menuBancos", 
-			"menuCorreos"];
-			for(var a of menuList){
-				if(a == actualMenu){
-					menuEditado = document.getElementById(a);
-					menuEditado.classList.remove('unselect');
-					menuEditado.classList.add('select');
-				}
-				if(a != actualMenu){
-					menuDes = document.getElementById(a);
-					menuDes.classList.remove('select');
-					menuDes.classList.add('unselect');
-				}
 			}
 		}
 
@@ -241,13 +246,7 @@
 			window.open('index.html');
 		}
 
-		function subirA(){
-			alert("subir");
-		}
-		function bajarA(){
-			alert('bajar');
-		}
-		
+
 	</script>
 
 </body>
