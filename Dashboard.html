@@ -23,64 +23,64 @@
 		</div>
 		<ul class="nav_list" style="list-style-type: none;">
 			<li>
-				<a href="#">
-					<i class='bx bx-grid-alt' id="btnDashboard" onclick="actual(this)"></i>
+				<a href="#menuDashboard">
+					<i class='bx bx-grid-alt' id="btnDashboard" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
 					<span class="links_name" id="btnDashboard" onclick="actual(this)">Dashboard</span>
 				</a>
 				<span class="tooltip">Dashboard</span>
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bx-user' id="btnUser" onclick="actual(this)"></i>
+				<a href="#menuUsuario">
+					<i class='bx bx-user' id="btnUser" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
 					<span class="links_name" id="btnUser" onclick="actual(this)">Usuario</span>
 				</a>
 				<span class="tooltip">Usuario</span>
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bxs-group' id="btnGroup" onclick="actual(this)"></i>
+				<a href="#menuCuentas">
+					<i class='bx bxs-group' id="btnGroup" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
 					<span class="links_name" id="btnGroup" onclick="actual(this)">Cuentas</span>
 				</a>
 				<span class="tooltip">Cuentas</span>
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bxs-archive-in' id="btnSuministros" onclick="actual(this)"></i>
+				<a href="#menuSuministros">
+					<i class='bx bxs-archive-in' id="btnSuministros" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
 					<span class="links_name" id="btnSuministros" onclick="actual(this)">Suministros</span>
 				</a>
 				<span class="tooltip">Suministros</span>
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bx-plug' id="btnConsumo" onclick="actual(this)"></i>
+				<a href="#menuConsumo">
+					<i class='bx bx-plug' id="btnConsumo" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
 					<span class="links_name" id="btnConsumo" onclick="actual(this)">Consumo</span>
 				</a>
 				<span class="tooltip">Consumo</span>
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bxs-briefcase-alt-2' id="btnNegocio" onclick="actual(this)"></i>
+				<a href="#menuNegocios">
+					<i class='bx bxs-briefcase-alt-2' id="btnNegocio" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
 					<span class="links_name" id="btnNegocio" onclick="actual(this)">Negocios</span>
 				</a>
 				<span class="tooltip">Negocios</span>
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bxs-receipt' id="btnFacturacion" onclick="actual(this)"></i>
+				<a href="#menuFacturacion">
+					<i class='bx bxs-receipt' id="btnFacturacion" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
 					<span class="links_name" id="btnFacturacion" onclick="actual(this)">Facturacion</span>
 				</a>
 				<span class="tooltip">Facturacion</span>
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bxs-dollar-circle' id="btnBancos" onclick="actual(this)"></i>
+				<a href="#menuBancos">
+					<i class='bx bxs-dollar-circle' id="btnBancos" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
 					<span class="links_name"  id="btnBancos" onclick="actual(this)">Cuentas bancarias</span>
 				</a>
 				<span class="tooltip">Bancos</span>
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bx-envelope' id="btnCorreos" onclick="actual(this)"></i>
+				<a href="#menuCorreos">
+					<i class='bx bx-envelope' id="btnCorreos" onclick="actual(this)" onmouseover="mostrarSpan()" onmouseleave="quitarSpan()"></i>
 					<span class="links_name"  id="btnCorreos" onclick="actual(this)">Plantillas de correo</span>
 				</a>
 				<span class="tooltip">Correo</span>
@@ -198,71 +198,51 @@
 			let actualId = actualBtn.id;
 			switch(actualId){
 				case "btnDashboard":
-					$('html, body').animate({
-						scrollTop: $("#menuDashboard").offset().top
-					}, 500);
 					window.document.title = `Dashboard`;					
 				break;
 
 				case "btnUser":
-
-					$('html, body').animate({
-						scrollTop: $("#menuUsuario").offset().top
-					}, 500);
-
 					window.document.title = `Usuario`;
 
 				break;
 
 				case "btnGroup":
-					$('html, body').animate({
-						scrollTop: $("#menuCuentas").offset().top
-					}, 500);
 					window.document.title = `Cuentas`;
 				break;
 
 				case "btnSuministros":
-					$('html, body').animate({
-						scrollTop: $("#menuSuministros").offset().top
-					}, 500);
 					window.document.title = `Suministros`;
 				break;
 
 				case "btnConsumo":
-					$('html, body').animate({
-						scrollTop: $("#menuConsumo").offset().top
-					}, 500);
 					window.document.title = `Consumo`;
 				break;
 
 				case "btnNegocio":
-					$('html, body').animate({
-						scrollTop: $("#menuNegocios").offset().top
-					}, 500);
 					window.document.title = `Negocios`;
 				break;
 
 				case "btnFacturacion":
-					$('html, body').animate({
-						scrollTop: $("#menuFacturacion").offset().top
-					}, 500);
 					window.document.title = `Facturacion`;
 				break;
 
 				case "btnBancos":
-					$('html, body').animate({
-						scrollTop: $("#menuBancos").offset().top
-					}, 500);
 					window.document.title = `Cuentas Bancarias`;
 				break;
 
 				case "btnCorreos":
-					$('html, body').animate({
-						scrollTop: $("#menuCorreos").offset().top
-					}, 500);
 					window.document.title = `Correos`;
 				break;
 			}
+		}
+
+		function mostrarSpan(){
+			let homeC = document.getElementById("home");
+			homeC.classList.toggle('unselect');
+		}
+		function quitarSpan(){
+			let homeC = document.getElementById("home");
+			homeC.classList.toggle('unselect');
 		}
 
 		function logOut(){

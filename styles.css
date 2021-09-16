@@ -178,7 +178,6 @@
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
-	overflow: hidden;
 }
 .sidebar{
 	position: fixed;
@@ -189,7 +188,6 @@
 	background: #1d1b31;
 	padding: 6px 14px;
 	transition: all 0.5s ease;
-	overflow: hidden;
 }
 
 .active{
@@ -262,7 +260,7 @@
 	opacity: 0;
 	pointer-events: none;
 	display: block;
-	z-index: 150;
+	z-index: 100;
 }
 
 .active ul li .tooltip{
@@ -272,7 +270,7 @@
 .sidebar ul li:hover .tooltip{
 	top: 50%;
 	opacity: 1;
-	transition: all 0.5s ease;
+	transition: all 0.5s ease;z
 }
 .sidebar ul li a{
 	color: #fff;
@@ -370,7 +368,7 @@
 	background: none;
 }
 .home_content{
-	position: absolute;
+	position: relative;
 	height: 100vh;
 	width: calc(100% - 78px);
 	left: 78px;
@@ -397,6 +395,7 @@
 	background: greenyellow;
 	overflow-x: hidden;
 	overflow-y: auto;
+	scroll-behavior: smooth;
 	}
 
 
@@ -409,6 +408,7 @@
 	height: 100vh;
 	width: calc(100% - 27px);
 	background: deepskyblue;
+	scroll-behavior: smooth;
 }
 .home_content .menuCuentas{
 	position: relative;
@@ -482,11 +482,9 @@
 	background: pink;
 }
 
-/*.select{
-	visibility: visible;
-	opacity: 1;
+.select{
+z-index: 1;
 }
 .unselect{
-	visibility: hidden;
-	opacity: 0;
-}*/
+z-index: -1;
+}
