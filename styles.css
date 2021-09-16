@@ -174,9 +174,10 @@
 
 .bodyMenu{
 	position: relative;
+	height: auto;
 	min-height: 100vh;
 	width: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 .sidebar{
 	position: fixed;
@@ -190,7 +191,7 @@
 }
 
 .active{
-	width: 240px
+	width: 240px;
 }
 .active .logo_content .logo{
 	opacity: 1;
@@ -368,19 +369,19 @@
 }
 .home_content{
 	position: absolute;
-	height: 100%;
+	height: 100vh;
 	width: calc(100% - 78px);
 	left: 78px;
 	transition: all 0.5s ease;
 	background: skyblue;
 	z-index: -10;
+	overflow: hidden;
 }
+
 .active ~ .home_content{
 	width: calc(100% - 240px);
 	left: 240px;
 }
-
-
 
 
 .home_content .menuDashboard{
@@ -389,10 +390,11 @@
 	font-weight: 500;
 	color: #1d1b31;
 	margin: 12px;
-	height: 100vh;
+	height: 97vh;
 	width: calc(100% - 27px);
 	background: greenyellow;
-}
+	}
+
 
 .home_content .menuUsuario{
 	position: absolute;

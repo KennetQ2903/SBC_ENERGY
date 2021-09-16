@@ -1,0 +1,38 @@
+#menuDashboard{
+	display: block;
+	overflow: hidden;
+	align-items: center;
+}
+
+/*--------------------------TITULO DASHBOARD------------------------------------*/
+#titDashMenuDiv{
+	width: 100%;
+	height: 5%;
+	position: relative;
+	background: indianred;
+	align-items: center;
+	padding-top: 0;
+	padding-left: 0.5%;
+}
+#titDashMenuH{
+	font-size: 100%;
+}
+/*--------------CONTENEDOR DE IMPORTE FACTURADO-----------------------------------*/
+
+#dash1{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background: white;
+	overflow-y: scroll;
+}
+#dash2{
+	width: 100%;
+	height: 300px;
+	background: pink;
+}
+#dash3{
+	width: 100%;
+	height: 300px;
+	background: red;
+}
