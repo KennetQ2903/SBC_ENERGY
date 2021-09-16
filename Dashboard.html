@@ -2,6 +2,7 @@
 <html>
 <link href="styles.css" rel="stylesheet" type="text/css">
 <link href="stylesMenuDashboard.css" rel="stylesheet" type="text/css">
+<link href="stylesMenuConsumo.css" rel="stylesheet" type="text/css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <!-- -----------------------------------------MENU DESLIZABLE--------------------------------------- -->
-<body class="bodyMenu" onload="posInicial()">
+<body class="bodyMenu">
 	<div class="sidebar">
 		<div class="logo_content">
 			<div class="logo">
@@ -116,6 +117,7 @@
 				<div id="titDashMenuDiv">
 					<h1 id="titDashMenuH">Dashboard</h1>
 				</div>
+
 				<div class="blankH">
 					
 				</div>
@@ -157,9 +159,45 @@
 			Menu Suministros
 		</div>
 
+
 		<div class="menuConsumo" id="menuConsumo">
-			Menu Consumo
+			<div id="titConsumo">
+				<h1 id="TITCONSUMO">Consumo</h1>
+			</div>
+			<div class="blankH">
+				
+			</div>
+			<div class="blankH">
+				
+			</div>
+			<div class="blankH">
+				
+			</div>
+
+			<div id="btnsConsumoMenu">
+				<div id="iconoCalendarioConsumo">
+					<i class='bx bx-calendar'></i>
+				</div>
+
+				<div id="opcionesConsumo">
+					<input type="radio" name="diaConsumo" id="diaConsumo">
+					<label for="diaConsumo">Por dia</label>
+				</div>
+
+				<div id="opcionesConsumo">
+					<input type="radio" name="mesConsumo" id="mesConsumo">
+					<label for="mesConsumo">Por mes</label>
+				</div>
+
+				<div id="opcionesConsumo">
+					<input type="radio" name="añoConsumo" id="añoConsumo">
+					<label for="añoConsumo">Por año</label>
+				</div>
+			</div>
+
+
 		</div>
+
 
 		<div class="menuNegocios" id="menuNegocios">
 			Menu Negocios

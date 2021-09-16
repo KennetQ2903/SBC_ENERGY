@@ -1,0 +1,74 @@
+#menuConsumo{
+	overflow: hidden;
+}
+#titConsumo{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: red;
+	padding-left: 0.5%;
+}
+#TITCONSUMO{
+	font-size: 2em;
+	font-family:  "Yu Gothic Light", sans-serif;
+}
+@media (max-width:  375px){
+	#TITCONSUMO{
+		font-size: 6.5vw;
+	}
+}
+
+
+#btnsConsumoMenu{
+	background: greenyellow;
+	width: 100%;
+	height: 2em;
+	display: flex;
+}
+#iconoCalendarioConsumo{
+	position: relative;
+	background: indianred;
+	position: relative;
+	width: auto;
+	height: 2em;
+	left: 7vw;
+}
+#iconoCalendarioConsumo i{
+	font-size: 2em;
+}
+
+@media (max-width:  375px){
+	#iconoCalendarioConsumo i{
+		font-size: 1.5em;
+	}
+	#btnsConsumoMenu{
+	height: 1.5em;
+	}
+	#iconoCalendarioConsumo{
+		height: 1.5em;
+		left: 3vw;
+	}
+}
+
+#opcionesConsumo{
+	position: relative;
+	left: 7vw;
+	background: white;
+	width: 27%;
+	height: inherit;
+	padding: 1vh;
+	padding-left: 2vw;
+}
+#opcionesConsumo label{
+	font-size: 0.8em;
+}
+@media (max-width:  375px){
+	#opcionesConsumo{
+		padding: 0vh;
+		padding-left: 0.4vw;
+		left: 3vw;
+	}
+	#opcionesConsumo label{
+		font-size: 0.5em;
+	}
+}
