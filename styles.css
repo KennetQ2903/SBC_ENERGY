@@ -222,7 +222,7 @@
 	color: #fff;
 	left: 50%;
 	top: 6px;
-	font-size: 20px;
+	font-size: 25px;
 	height: 50px;
 	width: 50px;
 	text-align: center;
@@ -292,6 +292,7 @@
 	border-radius: 12px;
 	line-height: 50px;
 	text-align: center;
+	font-size: 22px;
 }
 .sidebar .links_name{
 	opacity: 0;
@@ -374,7 +375,7 @@
 	width: calc(100% - 78px);
 	left: 78px;
 	transition: all 0.5s ease;
-	background: skyblue;
+	background: rgba(139, 139, 139, 0.4);
 	overflow: hidden;
 	display: block;
 	scroll-behavior: smooth;
@@ -394,7 +395,6 @@
 	margin: auto;
 	height: 100vh;
 	width: calc(100% - 27px);
-	background: greenyellow;
 	overflow-x: hidden;
 	overflow-y: auto;
 	scroll-behavior: smooth;
@@ -430,7 +430,6 @@
 	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
-	background: yellow;
 }
 .home_content .menuConsumo{
 	position: relative;
@@ -440,7 +439,6 @@
 	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
-	background: gray;
 }
 
 .home_content .menuNegocios{
@@ -471,7 +469,6 @@
 	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
-	background: burlywood;
 }
 .home_content .menuCorreos{
 	position: relative;

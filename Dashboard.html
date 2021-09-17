@@ -3,6 +3,8 @@
 <link href="styles.css" rel="stylesheet" type="text/css">
 <link href="stylesMenuDashboard.css" rel="stylesheet" type="text/css">
 <link href="stylesMenuConsumo.css" rel="stylesheet" type="text/css">
+<link href="stylesMenuSuministros.css" rel="stylesheet" type="text/css">
+<link href="stylesMenuBancos.css" rel="stylesheet" type="text/css">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -105,12 +107,13 @@
 <!-- -----------------------------------------MENU DESLIZABLE--------------------------------------- -->
 
 
-	<!-- ------------------------------MENU PRINCIPAL (PANTALLA)-------------------------------------- -->
+	<!-- ------------------------------MENU PRINCIPAL (PANTALLA) INICIO-------------------------------------- -->
 
 	<div class="home_content" id="home">
 
 
 
+<!-- ----------------------------------------------------MENU DASHBOARD------------------------------------------ -->
 
 		<div class="menuDashboard" id="menuDashboard">
 
@@ -147,18 +150,86 @@
 				</div>
 		</div>
 
+<!-- -------------------------------------------------------MENU USUARIO------------------------------------------------------------------- -->
+
 		<div class="menuUsuario" id="menuUsuario">
 			Menu Usuario
 		</div>
+
+<!-- -------------------------------------------------------MENU CUENTAS------------------------------------------------------------------- -->
 
 		<div class="menuCuentas" id="menuCuentas">
 			Menu Cuentas
 		</div>
 
+<!-- -------------------------------------------------------MENU SUMINISTROS---------------------------------------------------------------->
+
 		<div class="menuSuministros" id="menuSuministros">
-			Menu Suministros
+
+			<div id="divTitSuministros">
+				<h1 id="TITSUMINISTROS">
+					Suministros
+				</h1>
+			</div>
+
+			<div id="tabPageSuministros">
+				<button id="btnGruposSuministros" onclick="posGruposSuministros()">
+					Grupos
+				</button>
+				<button id="btnPuntosSuministros" onclick="posPuntosSuministros()">
+					Puntos de Suministros
+				</button>
+				<button id="agregarSuministros">
+					Agregar +
+				</button>
+				<div id="blankTab">
+					
+				</div>
+			</div>
+			<div id="configBarSuministros">
+
+				<div id="searchBarSuministrosDiv">
+					<input type="text" name="searchBarSuministrosInput" id="searchBarSuministrosInput" value="Buscar en...">
+				</div>
+
+
+				<div id="filterBySortByDivSuministros">
+					<select id="filterBySuministrosButton">
+
+						<option value="0">Filtrar</option>
+						<option value="1">Opcion 1</option>
+						<option value="2">Opcion 2</option>
+						<option value="3">Opcion 3</option>
+						<option value="4">Opcion 4</option>
+						<option value="5">Opcion 5</option>
+
+
+					</select>
+
+					<select id="sortBySuministrosButton">
+						<option value="0">Ordenar</option>
+						<option value="1">Opcion A</option>
+						<option value="2">Opcion B</option>
+						<option value="3">Opcion C</option>
+						<option value="4">Opcion D</option>
+						<option value="5">Opcion E</option>
+					</select>
+
+				</div>
+			</div>
+
+			<div id="contentSuministros">
+				<div id="contentGruposSuministros">
+					
+				</div>
+				<div id="contentPuntosSuministros">
+					
+				</div>
+			</div>
+
 		</div>
 
+<!-- -------------------------------------------------------MENU CONSUMO------------------------------------------------------------------- -->
 
 		<div class="menuConsumo" id="menuConsumo">
 			<div id="titConsumo">
@@ -170,46 +241,96 @@
 			<div class="blankH">
 				
 			</div>
-			<div class="blankH">
-				
-			</div>
+
 
 			<div id="btnsConsumoMenu">
-				<div id="iconoCalendarioConsumo">
-					<i class='bx bx-calendar'></i>
+				<div id="btnDia" onclick="posDia()">
+					Dia
 				</div>
 
-				<div id="opcionesConsumo">
-					<input type="radio" name="diaConsumo" id="diaConsumo">
-					<label for="diaConsumo">Por dia</label>
+				<div id="btnMes" onclick="posMes()">
+					Mes
 				</div>
 
-				<div id="opcionesConsumo">
-					<input type="radio" name="mesConsumo" id="mesConsumo">
-					<label for="mesConsumo">Por mes</label>
+				<div id="btnAño" onclick="posAño()">
+					Año
+				</div>
+			</div>
+			<div id="tabContentConsumo">
+				<div id="diaTab">
+					
+				</div>
+				<div id="mesTab">
+					
+				</div>
+				<div id="añoTab">
+					
 				</div>
 
-				<div id="opcionesConsumo">
-					<input type="radio" name="añoConsumo" id="añoConsumo">
-					<label for="añoConsumo">Por año</label>
-				</div>
 			</div>
 
 
 		</div>
 
+<!-- -------------------------------------------------------MENU NEGOCIOS------------------------------------------------------------------- -->
 
 		<div class="menuNegocios" id="menuNegocios">
 			Menu Negocios
 		</div>
 
+<!-- ------------------------------------------------------MENU FACTURACION------------------------------------------------------------------- -->
+
 		<div class="menuFacturacion" id="menuFacturacion">
 			Menu Facturacion
 		</div>
 
+<!-- -------------------------------------------------------MENU BANCOS------------------------------------------------------------------- -->
+
 		<div class="menuBancos" id="menuBancos">
-			Menu Bancos
+			<div id="titBancos">
+				<h1 id="TITBANCOS">Cuentas Bancarias</h1>
+			</div>
+
+			<div id="barConfigBancos">
+				<div id="searchBarBancosDiv">
+					<input type="text" name="searchBarBancosInput" id="searchBarBancosInput" value="Buscar en...">
+				</div>
+
+
+				<div id="filterBySortByDivBancos">
+					<select id="filterByBancosButton">
+
+						<option value="0">Filtrar</option>
+						<option value="1">Opcion 1</option>
+						<option value="2">Opcion 2</option>
+						<option value="3">Opcion 3</option>
+						<option value="4">Opcion 4</option>
+						<option value="5">Opcion 5</option>
+
+
+					</select>
+
+					<select id="sortByBancosButton">
+						<option value="0">Ordenar</option>
+						<option value="1">Opcion A</option>
+						<option value="2">Opcion B</option>
+						<option value="3">Opcion C</option>
+						<option value="4">Opcion D</option>
+						<option value="5">Opcion E</option>
+					</select>
+
+				</div>
+				<button id="agregarBancos">
+					Agregar +
+				</button>
+			</div>
+			<div id="contentBancos">
+				
+			</div>
+
 		</div>
+
+<!-- -------------------------------------------------------MENU CORREOS------------------------------------------------------------------- -->
 
 		<div class="menuCorreos" id="menuCorreos">
 			Menu Correos
@@ -217,7 +338,15 @@
 
 	</div>
 
-	<!-- ------------------------------MENU PRINCIPAL (PANTALLA)-------------------------------------- -->
+	<!-- ------------------------------MENU PRINCIPAL (PANTALLA) FIN-------------------------------------- -->
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------[SCRIPTS]------------------------------------------------------- -->
+
 
 	<script type="text/javascript">
 		let btn = document.querySelector('#btn');
@@ -230,6 +359,51 @@
 			$('html, body').animate({
 						scrollTop: $("#menuDashboard").offset().top
 					}, 500);
+		}
+		function posMes(){
+			document.getElementById('mesTab').style.top = -100 + '%';
+			document.getElementById('añoTab').style.top = 200 + '%';
+
+			document.getElementById('btnDia').style.background = "rgba(0, 0, 0, 0)";
+			document.getElementById('btnMes').style.background = "#333692";
+			document.getElementById('btnAño').style.background = "rgba(0, 0, 0, 0)";
+		}
+		function posDia(){
+			document.getElementById('mesTab').style.top = 100 + '%';
+			document.getElementById('añoTab').style.top = 200 + '%';	
+
+			document.getElementById('btnDia').style.background = "#333692";
+			document.getElementById('btnMes').style.background = "rgba(0, 0, 0, 0)";
+			document.getElementById('btnAño').style.background = "rgba(0, 0, 0, 0)";	
+		}
+		function posAño(){
+			document.getElementById('añoTab').style.top = -200 + '%';
+
+			document.getElementById('btnDia').style.background = "rgba(0, 0, 0, 0)";
+			document.getElementById('btnMes').style.background = "rgba(0, 0, 0, 0)";
+			document.getElementById('btnAño').style.background = "#333692";	
+		}
+
+		function posGruposSuministros(){
+
+			document.getElementById('contentPuntosSuministros').style.top = 100 + '%';	
+
+			document.getElementById('btnGruposSuministros').style.color = "#6468D1";
+			document.getElementById('btnGruposSuministros').style.borderColor = "#6468D1";
+
+			document.getElementById('btnPuntosSuministros').style.color = "rgba(0, 0, 0, 0.4)";
+			document.getElementById('btnPuntosSuministros').style.borderColor = "rgba(0, 0, 0, 0.4)";
+		}
+
+		function posPuntosSuministros(){
+
+			document.getElementById('contentPuntosSuministros').style.top = -100 + '%';
+
+			document.getElementById('btnPuntosSuministros').style.color = "#6468D1";
+			document.getElementById('btnPuntosSuministros').style.borderColor = "#6468D1";
+
+			document.getElementById('btnGruposSuministros').style.color = "rgba(0, 0, 0, 0.4)";
+			document.getElementById('btnGruposSuministros').style.borderColor = "rgba(0, 0, 0, 0.4)";
 		}
 
 		function actual(actualBtn){
@@ -288,7 +462,38 @@
 			window.open('index.html');
 		}
 
+		function borrarSeachBar(){
+			document.getElementById('searchBarSuministrosInput').value = "";
+		}
 
+
+		// Funcion para borrar el buscador de suministros
+		window.addEventListener('click', function(e){
+			if(document.getElementById('searchBarSuministrosInput').contains(e.target)){
+				if(document.getElementById('searchBarSuministrosInput').value == "Buscar en..."){
+					document.getElementById('searchBarSuministrosInput').value = "";
+				}
+			}
+			if(!document.getElementById('searchBarSuministrosInput').contains(e.target)){
+				if(document.getElementById('searchBarSuministrosInput').value == ""){
+					document.getElementById('searchBarSuministrosInput').value = "Buscar en...";
+				}
+			}
+		});
+
+		// Funcion para borrar el buscador de Bancos
+		window.addEventListener('click', function(e){
+			if(document.getElementById('searchBarBancosInput').contains(e.target)){
+				if(document.getElementById('searchBarBancosInput').value == "Buscar en..."){
+					document.getElementById('searchBarBancosInput').value = "";
+				}
+			}
+			if(!document.getElementById('searchBarBancosInput').contains(e.target)){
+				if(document.getElementById('searchBarBancosInput').value == ""){
+					document.getElementById('searchBarBancosInput').value = "Buscar en...";
+				}
+			}
+		});
 	</script>
 
 </body>

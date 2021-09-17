@@ -1,12 +1,14 @@
 #menuConsumo{
 	overflow: hidden;
+	display: block;
 }
 #titConsumo{
 	position: relative;
 	width: 100%;
 	height: auto;
-	background: red;
+	color: dimgray;
 	padding-left: 0.5%;
+	user-select: none;
 }
 #TITCONSUMO{
 	font-size: 2em;
@@ -20,55 +22,94 @@
 
 
 #btnsConsumoMenu{
-	background: greenyellow;
-	width: 100%;
+	position: relative;
+	background: rgba(0, 0, 0, 0.2);
+	width: 90%;
 	height: 2em;
+	left: 5%;
+	right: 5%;
 	display: flex;
-}
-#iconoCalendarioConsumo{
-	position: relative;
-	background: indianred;
-	position: relative;
-	width: auto;
-	height: 2em;
-	left: 7vw;
-}
-#iconoCalendarioConsumo i{
-	font-size: 2em;
-}
+	overflow-x: hidden;
+	user-select: none;
+	font-family:  "Yu Gothic Light", sans-serif;
+	
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
 
-@media (max-width:  375px){
-	#iconoCalendarioConsumo i{
-		font-size: 1.5em;
-	}
-	#btnsConsumoMenu{
-	height: 1.5em;
-	}
-	#iconoCalendarioConsumo{
-		height: 1.5em;
-		left: 3vw;
-	}
+	box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
-
-#opcionesConsumo{
+#btnDia{
+	background: #333692;
+	width: 25vw;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+#btnMes{
+	width: 25vw;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+#btnAño{
+	width: 25vw;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+#tabContentConsumo{
 	position: relative;
-	left: 7vw;
 	background: white;
-	width: 27%;
-	height: inherit;
-	padding: 1vh;
-	padding-left: 2vw;
+	width: 90%;
+	height: 70vh;
+	left: 5%;
+	right: 5%;
+	display: block;
+	overflow: hidden;
+	border-style: solid;
+	border-color: #333692;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-width: 2px;
+	box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
-#opcionesConsumo label{
-	font-size: 0.8em;
+@media (max-width: 375px){
+	.blankH{
+		height: 60px;
+	}
+	#tabContentConsumo{
+		height: 250px;
+	}
 }
-@media (max-width:  375px){
-	#opcionesConsumo{
-		padding: 0vh;
-		padding-left: 0.4vw;
-		left: 3vw;
-	}
-	#opcionesConsumo label{
-		font-size: 0.5em;
-	}
+
+#diaTab{
+	position: relative;
+	background:  white;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#mesTab{
+	position: relative;
+	background:  white;
+	width: 100%;
+	height: 100%;
+}
+#añoTab{
+	position: relative;
+	background: white;
+	width: 100%;
+	height: 100%;
 }
