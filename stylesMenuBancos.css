@@ -136,3 +136,25 @@
 		height: 90vh;
 	}
 }
+
+.demo {
+	border:1px solid #C0C0C0;
+	border-collapse:collapse;
+	padding:5px;
+	width: 100%;
+	font-family:  "Yu Gothic Light", sans-serif;
+	color: white;
+}
+.demo th {
+	border:1px solid #C0C0C0;
+	padding:5px;
+	background:#6468D1;
+}
+
+.demo td {
+	text-align: center;
+	color: black;
+	border:1px solid #C0C0C0;
+	padding:5px;
+	background:#FFFFFF;
+}

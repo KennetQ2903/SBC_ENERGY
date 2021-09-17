@@ -5,6 +5,7 @@
 <link href="stylesMenuConsumo.css" rel="stylesheet" type="text/css">
 <link href="stylesMenuSuministros.css" rel="stylesheet" type="text/css">
 <link href="stylesMenuBancos.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -125,25 +126,33 @@
 					
 				</div>
 					<div id="contentD1">
-						
+						<h1>17,923.54</h1>
+						<h3>GTQ.</h3>
+						<h4>Importe facturado en el año corriente 2021</h4>
 					</div>
 				<div class="blankH">
 					
 				</div>
-					<div id="contentD1">
-						
+					<div id="contentD2">
+						<h1>17,923.54</h1>
+						<h3>GTQ.</h3>
+						<h4>Importe facturado total</h4>
 					</div>
 				<div class="blankH">
 					
 				</div>
-					<div id="contentD1">
-						
+					<div id="contentD3">
+						<canvas id="grafClientes">
+							
+						</canvas>
 					</div>
 				<div class="blankH">
 					
 				</div>
-					<div id="contentD1">
-						
+					<div id="contentD4">
+						<h1>3,364.829</h1>
+						<h3>Kw/h</h3>
+						<h4>Consumo total representado en kw/h</h4>
 					</div>
 				<div class="blankH">
 					
@@ -159,7 +168,8 @@
 <!-- -------------------------------------------------------MENU CUENTAS------------------------------------------------------------------- -->
 
 		<div class="menuCuentas" id="menuCuentas">
-			Menu Cuentas
+			<i class='bx bx-paint-roll'></i>
+			<h1 style="font-size: 100px;">En desarrollo</h1>
 		</div>
 
 <!-- -------------------------------------------------------MENU SUMINISTROS---------------------------------------------------------------->
@@ -197,22 +207,17 @@
 					<select id="filterBySuministrosButton">
 
 						<option value="0">Filtrar</option>
-						<option value="1">Opcion 1</option>
-						<option value="2">Opcion 2</option>
-						<option value="3">Opcion 3</option>
-						<option value="4">Opcion 4</option>
-						<option value="5">Opcion 5</option>
+						<option value="1">Nombre</option>
+						<option value="2">Grupo</option>
 
 
 					</select>
 
 					<select id="sortBySuministrosButton">
 						<option value="0">Ordenar</option>
-						<option value="1">Opcion A</option>
-						<option value="2">Opcion B</option>
-						<option value="3">Opcion C</option>
-						<option value="4">Opcion D</option>
-						<option value="5">Opcion E</option>
+						<option value="1">A-Z</option>
+						<option value="2">Z-A</option>
+
 					</select>
 
 				</div>
@@ -220,10 +225,72 @@
 
 			<div id="contentSuministros">
 				<div id="contentGruposSuministros">
-					
+					<table class="demo">
+						<thead>
+						<tr>
+							<th>Nombre del grupo</th>
+							<th>Direccion</th>
+							<th>Puntos de suministro</th>
+							<th>Opciones</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Criasersa</td>
+							<td>7ma avenida zona 10</td>
+							<td>32</td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						<tr>
+							<td>Casa Real</td>
+							<td>zona 15 guatemala</td>
+							<td>66</td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						<tr>
+							<td>Hacienda flores</td>
+							<td>Valles de navarra</td>
+							<td>90</td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						</tbody>
+					</table>
 				</div>
 				<div id="contentPuntosSuministros">
-					
+					<table class="demo">
+						<thead>
+						<tr>
+							<th>Nombre punto de suministro</th>
+							<th>Grupo</th>
+							<th>Usuario actual</th>
+							<th>Estado</th>
+							<th>Opciones</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>0101</td>
+							<td>Criasersa</td>
+							<td>Admin_</td>
+							<td><i class='bx bxs-check-circle'></i></td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						<tr>
+							<td>CA456</td>
+							<td>Casa Real</td>
+							<td>Admin_</td>
+							<td><i class='bx bx-check-circle'></i></td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						<tr>
+							<td>VAL56</td>
+							<td>Hacienda flores</td>
+							<td>Admin_</td>
+							<td><i class='bx bxs-check-circle'></i></td>
+							<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+						</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 
@@ -258,13 +325,19 @@
 			</div>
 			<div id="tabContentConsumo">
 				<div id="diaTab">
-					
+					<canvas id="grafDiaConsumo">
+						
+					</canvas>
 				</div>
 				<div id="mesTab">
-					
+					<canvas id="grafMesConsumo" width="400" height="400">
+						
+					</canvas>
 				</div>
 				<div id="añoTab">
-					
+					<canvas id="grafAñoConsumo">
+						
+					</canvas>
 				</div>
 
 			</div>
@@ -275,13 +348,15 @@
 <!-- -------------------------------------------------------MENU NEGOCIOS------------------------------------------------------------------- -->
 
 		<div class="menuNegocios" id="menuNegocios">
-			Menu Negocios
+			<i class='bx bx-paint-roll'></i>
+			<h1 style="font-size: 100px;">En desarrollo</h1>
 		</div>
 
 <!-- ------------------------------------------------------MENU FACTURACION------------------------------------------------------------------- -->
 
 		<div class="menuFacturacion" id="menuFacturacion">
-			Menu Facturacion
+			<i class='bx bx-paint-roll'></i>
+			<h1 style="font-size: 100px;">En desarrollo</h1>
 		</div>
 
 <!-- -------------------------------------------------------MENU BANCOS------------------------------------------------------------------- -->
@@ -301,22 +376,16 @@
 					<select id="filterByBancosButton">
 
 						<option value="0">Filtrar</option>
-						<option value="1">Opcion 1</option>
-						<option value="2">Opcion 2</option>
-						<option value="3">Opcion 3</option>
-						<option value="4">Opcion 4</option>
-						<option value="5">Opcion 5</option>
+						<option value="1">Nombre</option>
+						<option value="2">Codigo</option>
 
 
 					</select>
 
 					<select id="sortByBancosButton">
 						<option value="0">Ordenar</option>
-						<option value="1">Opcion A</option>
-						<option value="2">Opcion B</option>
-						<option value="3">Opcion C</option>
-						<option value="4">Opcion D</option>
-						<option value="5">Opcion E</option>
+						<option value="1">A-Z</option>
+						<option value="2">Z-A</option>
 					</select>
 
 				</div>
@@ -325,7 +394,32 @@
 				</button>
 			</div>
 			<div id="contentBancos">
-				
+				<table class="demo">
+					<thead>
+					<tr>
+						<th>Banco</th>
+						<th>Codigo de la cuenta</th>
+						<th>Opciones</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Banco G&T</td>
+						<td>6609-23456464-900</td>
+						<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+					</tr>
+					<tr>
+						<td>Banrural</td>
+						<td>505-436542332-3232</td>
+						<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+					</tr>
+					<tr>
+						<td>BAC</td>
+						<td>33-31232134343-222</td>
+						<td><i class='bx bxs-edit'></i><i class='bx bxs-x-circle'></i></td>
+					</tr>
+					</tbody>
+				</table>
 			</div>
 
 		</div>
@@ -333,7 +427,8 @@
 <!-- -------------------------------------------------------MENU CORREOS------------------------------------------------------------------- -->
 
 		<div class="menuCorreos" id="menuCorreos">
-			Menu Correos
+			<i class='bx bx-paint-roll'></i>
+			<h1 style="font-size: 100px;">En desarrollo</h1>
 		</div>
 
 	</div>
@@ -492,6 +587,88 @@
 				if(document.getElementById('searchBarBancosInput').value == ""){
 					document.getElementById('searchBarBancosInput').value = "Buscar en...";
 				}
+			}
+		});
+
+		// ---------------------------FUNCIONES GRAFICAS CONSUMO---------------------------
+		let grafDia = document.getElementById('grafDiaConsumo').getContext("2d");
+		var chartDia = new Chart(grafDia, {
+			type: "bar",
+			data: {
+				labels:["6am", "8am", "10am", "12pm", "14pm", "16pm", "18pm"],
+				datasets:[{
+					label: "Gráfica de consumo en el dia (Kw/h)",
+					backgroundColor: "#33FF00",
+					data:[10, 40, 105, 220, 120, 300, 455],
+				}]
+			},
+			options:{
+				responsive: true,
+				maintainAspectRatio: false
+			}
+		});
+
+		let grafMes = document.getElementById('grafMesConsumo').getContext("2d");
+		var chartMes = new Chart(grafMes, {
+			type: "line",
+			data: {
+				labels:["semana 1", "semana 2", "semana 3", "semana 4"],
+				datasets:[{
+					label: "Gráfica de consumo del mes (Kw/h)",
+					borderColor: "rgb(15, 167, 222)",
+					pointBackgroundColor: "rgb(255, 255, 255)", 
+					pointRadius: 6,
+					fill: true,
+					tension: 0.5,
+					data:[4.8333, 11.3333, 10, 15.1666],
+				}]
+			},
+			options:{
+				responsive: true,
+				maintainAspectRatio: false
+			}
+		});
+
+		let grafAño = document.getElementById('grafAñoConsumo').getContext("2d");
+		var chartAño = new Chart(grafAño, {
+			type: "line",
+			data: {
+				labels:["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+				datasets:[{
+					label: "Gráfica de consumo del año (Kw/h)",
+					borderColor: "#FF031C",
+					pointBackgroundColor: "#FF031C", 
+					pointRadius: 6,
+					fill: true,
+					data:[200, 340, 233.33, 498.9, 367.789, 123.45, 234, 346.7, 100, 98.67, 55.44, 766.55],
+				}]
+			},
+			options:{
+				responsive: true,
+				maintainAspectRatio: false
+			}
+		});
+
+
+		var grafCl = $("#grafClientes");
+		new Chart(grafCl, {
+			type: "polarArea",
+			data: {
+				labels:["MASESA.S.A", "TOYOTA", "HUAWEI", "SAMSUNG", "UNREAL TECHS"],
+				datasets:[{
+					label: "Gráfica de clientes",
+					backgroundColor: [
+				      'rgb(255, 99, 132)',
+				      'rgb(75, 192, 192)',
+				      'rgb(255, 205, 86)',
+				      'rgb(201, 203, 207)',
+				      'rgb(54, 162, 235)'],
+					data:[30, 3, 8, 12, 34],
+				}]
+			},
+			options:{
+				responsive: true,
+				maintainAspectRatio: false
 			}
 		});
 	</script>
