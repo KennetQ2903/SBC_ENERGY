@@ -5,6 +5,7 @@
 <link href="stylesMenuConsumo.css" rel="stylesheet" type="text/css">
 <link href="stylesMenuSuministros.css" rel="stylesheet" type="text/css">
 <link href="stylesMenuBancos.css" rel="stylesheet" type="text/css">
+<link href="tabla.css" rel="stylesheet" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <head>
 	<meta charset="utf-8">
@@ -161,15 +162,218 @@
 
 <!-- -------------------------------------------------------MENU USUARIO------------------------------------------------------------------- -->
 
-		<div class="menuUsuario" id="menuUsuario">
-			Menu Usuario
+	<div class="menuUsuario" id="menuUsuario">
+			<div class="menuUsuario" id="menuUsuario">
+
+			<div id="divTitulo">
+				<h1 id="TITULO">
+					Usuario
+				</h1>
+			</div>
+
+			<div class="main-container">
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo					
+					</button>
+				</a>	
+				<br><br>
+
+				<div id="parrafocantRegistros" style="float: left;">
+					<p>
+					Mostrar 
+					<select name="cantRegistros">
+						<option>10</option>
+						<option>25</option>
+						<option>50</option>
+						<option>100</option>
+					</select>
+					registros 
+				</p>			
+				</div>
+
+				<div id="parrafoBuscar" style="float: right;">
+					<p>
+						Buscar: 
+						<input type="text" name="buscar" />
+					</p>
+				</div>
+
+				<br><br>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Nombre Usuario</th>
+							<th>Nombre Común</th>
+							<th>Cliente</th>
+							<th>Tipología</th>
+							<th>Estado</th>
+							<th>Opciones</th>
+						</tr>
+					</thead>
+
+					<tr>
+						<td>cacu01004</td>
+						<td>MARISELA FLORES MAYORGA</td>
+						<td>MARISELA FLORES MAYORGA</td>
+						<td>Cliente</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+						</td>
+					</tr>
+
+					<tr>
+						<td>cacu01005</td>
+						<td>JAVIER LOPEZ  MARTINEZ</td>
+						<td>JAVIER LOPEZ MARTINEZ</td>
+						<td>Admin</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td>cacu0101</td>
+						<td>MARCELA LISETTE FRANZ RUIZ</td>
+						<td>ECHEVA S.A.</td>
+						<td>Cliente</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+				</table>
+				<br>
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo			
+					</button>
+				</a>	
+			
+			</div>
 		</div>
+	</div>
 
 <!-- -------------------------------------------------------MENU CUENTAS------------------------------------------------------------------- -->
 
 		<div class="menuCuentas" id="menuCuentas">
-			<i class='bx bx-paint-roll'></i>
-			<h1 style="font-size: 100px;">En desarrollo</h1>
+			<div id="divTitulo">
+				<h1 id="TITULO">
+					Cuentas Clientes
+				</h1>
+			</div>
+
+			<div id="main-container">
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo					
+					</button>
+				</a>	
+				<br><br>
+
+				<div id="parrafocantRegistros" style="float: left;">
+					<p>
+					Mostrar 
+					<select name="cantRegistros">
+						<option>10</option>
+						<option>25</option>
+						<option>50</option>
+						<option>100</option>
+					</select>
+					registros 
+				</p>			
+				</div>
+				
+				<div id="parrafoBuscar" style="float: right;">
+					<p>
+						Buscar: 
+						<input type="text" name="buscar" />
+					</p>
+				</div>
+				<br>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Nombre Cliente</th>
+							<th>Dirección</th>
+							<th>Tipología</th>
+							<th>Estado</th>
+							<th>Opciones</th>
+						</tr>
+					</thead>
+
+					<tr>
+						<td>AGROPECUARIA LEBANIEGA, S.A.</td>
+						<td>EDIFICIO CASA ACUEDUCTO, 3A. AVENIDA 20-96, ZONA 10 Apto. 1103 - GUATEMALA - Guatemala</td>
+						<td>Particular</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+						</td>
+					</tr>
+
+					<tr>
+						<td>ALAN AUGUSTO SOSA ALVARADO</td>
+						<td>14 Avenida 9-00, Zona 14 Edificio Segheria, Torre 1, Apto 0701 - Guatemala - Guatemala</td>
+						<td>Particular</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td>ALAN WALDEMAR DUARTE BARRIOS</td>
+						<td>EDIFICIO SEGHERIA TORRE 2 14 AVENIDA 9-00 ZONA 14. APTO. 805 - GUATEMALA - Guatemala</td>
+						<td>Particular</td>
+						<td><i class='bx bx-check'></i></td>
+						<td>
+							<center>
+								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+				</table>
+				<br>
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo			
+					</button>
+				</a>	
+			
+			</div>
 		</div>
 
 <!-- -------------------------------------------------------MENU SUMINISTROS---------------------------------------------------------------->
@@ -348,15 +552,198 @@
 <!-- -------------------------------------------------------MENU NEGOCIOS------------------------------------------------------------------- -->
 
 		<div class="menuNegocios" id="menuNegocios">
-			<i class='bx bx-paint-roll'></i>
-			<h1 style="font-size: 100px;">En desarrollo</h1>
+			<div id="divTitulo">
+				<h1 id="TITULO">
+					Tarifas de Venta
+				</h1>
+			</div>
+
+			<div id="main-container">
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo					
+					</button>
+				</a>	
+				<br><br>
+
+				<div id="parrafocantRegistros" style="float: left;">
+					<p>
+					Mostrar 
+					<select name="cantRegistros">
+						<option>10</option>
+						<option>25</option>
+						<option>50</option>
+						<option>100</option>
+					</select>
+					registros 
+				</p>			
+				</div>
+				
+				<div id="parrafoBuscar" style="float: right;">
+					<p>
+						Buscar: 
+						<input type="text" name="buscar" />
+					</p>
+				</div>
+				<br>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Nombre de Tarifa</th>
+							<th>Tipología</th>
+							<th>Puntos de Suministro</th>
+							<th>Opciones</th>
+						</tr>
+					</thead>
+
+					<tr>
+						<td>BTdfp - Casa Acueducto</td>
+						<td>BTDfp</td>				
+						<td>2</td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+						</td>
+						</tr>
+
+					<tr>
+						<td>BTdfp - Segheria</td>
+						<td>BTDfp</td>
+						<td>3</td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td>BTS - Casa Acueducto</td>
+						<td>BTS</td>
+						<td>84</td>
+						<td>
+							<center>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+				</table>
+				<br>
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo			
+					</button>
+				</a>	
+			
+			</div>
 		</div>
 
 <!-- ------------------------------------------------------MENU FACTURACION------------------------------------------------------------------- -->
 
 		<div class="menuFacturacion" id="menuFacturacion">
-			<i class='bx bx-paint-roll'></i>
-			<h1 style="font-size: 100px;">En desarrollo</h1>
+			<div id="divTitulo">
+				<h1 id="TITULO">
+					Conceptos	
+				</h1>
+			</div>
+
+			<div id="main-container">
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo					
+					</button>
+				</a>	
+				<br><br>
+
+				<div id="parrafocantRegistros" style="float: left;">
+					<p>
+					Mostrar 
+					<select name="cantRegistros">
+						<option>10</option>
+						<option>25</option>
+						<option>50</option>
+						<option>100</option>
+					</select>
+					registros 
+				</p>			
+				</div>
+				
+				<div id="parrafoBuscar" style="float: right;">
+					<p>
+						Buscar: 
+						<input type="text" name="buscar" />
+					</p>
+				</div>
+				<br>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Código Concepto</th>
+							<th>Nombre Concepto</th>
+							<th>Opciones</th>
+						</tr>
+					</thead>
+
+					<tr>
+						<td>CKWH</td>
+						<td>Cargo Unitario por Energía</td>
+						<td>
+							<center>
+								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+						</td>
+						</tr>
+
+					<tr>
+						<td>CPOWER</td>
+						<td>Cargo por potencia contratada</td>
+						<td>
+							<center>
+								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td>EXCPFEE</td>
+						<td>Cargo por exceder la potencia contratada</td>
+						<td>
+							<center>
+								<button><span class='bx bxs-file' id="bntFacturas"></span></button>
+								<button><span class='bx bx-edit' id="bntModificar"></span></button>
+								<button><span class='bx bx-x' id="bntEliminar"></span></button>				
+							</center>
+							
+						</td>
+					</tr>
+
+				</table>
+				<br>
+
+				<a href="#">
+					<button class="btncrear">			
+						Crear Nuevo			
+					</button>
+				</a>	
+			
+			</div>
 		</div>
 
 <!-- -------------------------------------------------------MENU BANCOS------------------------------------------------------------------- -->
@@ -427,8 +814,8 @@
 <!-- -------------------------------------------------------MENU CORREOS------------------------------------------------------------------- -->
 
 		<div class="menuCorreos" id="menuCorreos">
-			<i class='bx bx-paint-roll'></i>
-			<h1 style="font-size: 100px;">En desarrollo</h1>
+			<i class='bx bxs-paint-roll'></i>
+			<h1 style="font-size: 1em;">En desarrollo</h1>
 		</div>
 
 	</div>

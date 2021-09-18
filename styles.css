@@ -409,7 +409,6 @@
 	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
-	background: deepskyblue;
 	scroll-behavior: smooth;
 }
 .home_content .menuCuentas{
@@ -420,12 +419,6 @@
 	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
-
-	/*EN DESARROLLO*/
-	font-size: 10em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 
 }
 .home_content .menuSuministros{
@@ -456,11 +449,6 @@
 	height: 100vh;
 	width: calc(100% - 27px);
 	
-	/*EN DESARROLLO*/
-	font-size: 10em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 .home_content .menuFacturacion{
 	position: relative;
@@ -470,13 +458,6 @@
 	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
-
-
-	/*EN DESARROLLO*/
-	font-size: 10em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 .home_content .menuBancos{
 	position: relative;
