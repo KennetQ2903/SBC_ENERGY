@@ -30,8 +30,13 @@
 	<script async src="./assets/js/main.js"></script>
 
 </head>
-<!-- -----------------------------------------MENU DESLIZABLE--------------------------------------- -->
+
 <body class="bodyMenu" onload="cargarGraficaClientes()">
+
+	
+
+<!-- -----------------------------------------MENU DESLIZABLE--------------------------------------- -->
+
 	<div class="sidebar">
 
 		<div class="logo_content">
@@ -127,20 +132,20 @@
 	</div>
 <!-- -----------------------------------------MENU DESLIZABLE--------------------------------------- -->
 
+<!-- ========================================== HEADER ================================================-->
 
-	<!-- ------------------------------MENU PRINCIPAL (PANTALLA) INICIO-------------------------------------- -->
+	<div id="titulosHeader">
+		<h1 id="titHeader"></h1>
+	</div>
+
+
+<!-- ------------------------------MENU PRINCIPAL (PANTALLA) INICIO-------------------------------------- -->
 
 	<div class="home_content" id="home">
-
-
 
 <!-- ----------------------------------------------------MENU DASHBOARD------------------------------------------ -->
 
 		<div class="menuDashboard" id="menuDashboard">
-
-				<div id="titDashMenuDiv">
-					<h1 id="titDashMenuH">Dashboard</h1>
-				</div>
 
 				<div class="blankH">
 					
@@ -399,12 +404,6 @@
 
 		<div class="menuSuministros" id="menuSuministros">
 
-			<div id="divTitSuministros">
-				<h1 id="TITSUMINISTROS">
-					Suministros
-				</h1>
-			</div>
-
 			<div id="tabPageSuministros">
 				<button id="btnGruposSuministros" onclick="posGruposSuministros()">
 					Grupos
@@ -522,9 +521,7 @@
 <!-- -------------------------------------------------------MENU CONSUMO------------------------------------------------------------------- -->
 
 		<div class="menuConsumo" id="menuConsumo">
-			<div id="titConsumo">
-				<h1 id="TITCONSUMO">Consumo</h1>
-			</div>
+			
 			<div class="blankH">
 				
 			</div>
@@ -765,12 +762,9 @@
 			</div>
 		</div>
 
-<!-- ==========================================0 MENU BANCOS =============================== -->
+<!-- ================================== MENU BANCOS =============================== -->
 
 		<div class="menuBancos" id="menuBancos">
-			<div id="titBancos">
-				<h1 id="TITBANCOS">Cuentas Bancarias</h1>
-			</div>
 
 			<div id="barConfigBancos">
 				<div id="searchBarBancosDiv">
@@ -793,8 +787,8 @@
 						<option value="1">A-Z</option>
 						<option value="2">Z-A</option>
 					</select>
-
 				</div>
+
 				<button id="agregarBancos">
 					Agregar +
 				</button>

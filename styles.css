@@ -166,7 +166,41 @@
 }
 
 
-/*`----------------------------MENU DESPLEGABLE----------------------------------*/
+/* ======================================== HEADER ==================================================== */
+
+#titulosHeader{
+	position: fixed;
+	top: 0;
+	left: 78px;
+	width: calc(100% - 78px);
+	height: 10vh;
+	background: white;
+	transition: .5s;
+	z-index: 100;
+	align-items: center;
+	color: dimgray;
+	display: flex;
+	padding: 1rem;
+}
+
+#titulosHeader h1{
+	font-size: 3rem;
+	font-family: "Yu Gothic Light", sans-serif;
+}
+
+.active ~ #titulosHeader{
+	left: 240px;
+	width: calc(100% - 240px);
+}
+
+@media screen and (max-width:  700px){
+	#titulosHeader{
+		left: 0;
+		width: 100%;
+	}
+}
+
+/* ========================================== MENU DESPLEGABLE ================================================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -176,12 +210,15 @@
   font-family: "Poppins" , sans-serif;
 }
 
+*,::before,::after{
+		box-sizing: border-box;
+	}
+
 .bodyMenu{
 	position: relative;
 	height: auto;
 	min-height: 100vh;
 	width: 100%;
-	display: flex;
 	overflow: hidden;
 }
 .sidebar{
@@ -194,7 +231,6 @@
 	padding: 6px 14px;
 	transition: all 0.5s ease;
 }
-
 .active{
 	width: 240px;
 }
@@ -383,13 +419,24 @@
 	color: #FFf;
 	background: none;
 }
+
+@media screen and (max-width:  700px){
+	.sidebar{
+		left: -30%;
+	}
+}
+
+/* ====================================== HOME ==================================== */
+
 .home_content{
 	position: relative;
-	height: 100vh;
+	height: 90vh;
 	width: calc(100% - 78px);
 	left: 78px;
-	transition: all 0.5s ease;
+	top: 10vh;
+	transition: .5s;
 	background: rgba(139, 139, 139, 0.4);
+	/*background: deepskyblue;*/
 	overflow: hidden;
 	display: block;
 	scroll-behavior: smooth;
@@ -407,7 +454,7 @@
 	font-weight: 500;
 	color: #1d1b31;
 	margin: auto;
-	height: 100vh;
+	height: 90vh;
 	width: calc(100% - 27px);
 	overflow-x: hidden;
 	overflow-y:scroll;
@@ -426,6 +473,7 @@
 	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
+	overflow: hidden;
 	scroll-behavior: smooth;
 }
 .home_content .menuCuentas{
@@ -436,6 +484,7 @@
 	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
+	overflow: hidden;
 
 }
 .home_content .menuSuministros{
@@ -444,7 +493,8 @@
 	font-weight: 500;
 	color: #1d1b31;
 	margin: 12px;
-	height: 100vh;
+	height: 90vh;
+	overflow: hidden;
 	width: calc(100% - 27px);
 }
 .home_content .menuConsumo{
@@ -453,8 +503,9 @@
 	font-weight: 500;
 	color: #1d1b31;
 	margin: 12px;
-	height: 100vh;
+	height: 90vh;
 	width: calc(100% - 27px);
+	overflow: hidden;
 }
 
 .home_content .menuNegocios{
@@ -465,7 +516,7 @@
 	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
-	
+	overflow: hidden;
 }
 .home_content .menuFacturacion{
 	position: relative;
@@ -475,6 +526,7 @@
 	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
+	overflow: hidden;
 }
 .home_content .menuBancos{
 	position: relative;
@@ -482,8 +534,9 @@
 	font-weight: 500;
 	color: #1d1b31;
 	margin: 12px;
-	height: 100vh;
+	height: 90vh;
 	width: calc(100% - 27px);
+	overflow: hidden;
 }
 .home_content .menuCorreos{
 	position: relative;
@@ -493,6 +546,7 @@
 	margin: 12px;
 	height: 100vh;
 	width: calc(100% - 27px);
+	overflow: hidden;
 
 	/*EN DESARROLLO*/
 	font-size: 10em;
@@ -501,11 +555,15 @@
 	justify-content: center;
 }
 
-/*.select{
-z-index: 1;
-}*/
 .unselect{
 z-index: -1;
+}
+
+@media screen and (max-width:  700px){
+	.home_content{
+		left: 0;
+		width: 100%;
+	}
 }
 
 

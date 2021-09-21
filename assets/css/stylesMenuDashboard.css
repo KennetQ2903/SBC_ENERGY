@@ -3,26 +3,6 @@
 	display: block;
 }
 
-/*--------------------------TITULO DASHBOARD------------------------------------*/
-#titDashMenuDiv{
-	width: 100%;
-	height: auto;
-	position: relative;	
-	align-items: center;
-	padding-top: 0;
-	padding-left: 0.5%;
-}
-#titDashMenuH{
-	color: dimgray;
-	font-size: 2em;
-	font-family:  "Yu Gothic Light", sans-serif;
-	user-select: none;
-}
-@media (max-width:  375px){
-	#titDashMenuH{
-		font-size: 6.2vw;
-	}
-}
 /*--------------CONTENEDOR DE IMPORTE FACTURADO-----------------------------------*/
 
 .blankH{
@@ -59,33 +39,33 @@
 
 #contentD1 H1{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 3.2em;
+	font-size: 4rem;
 	position: relative;
 	text-align: right;
 }
 #contentD1 H3{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1.5em;
+	font-size: 2rem;
 	position: relative;
 	top: -2vh;
 	text-align: right;
 }
 #contentD1 H4{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1em;
+	font-size: 1.2rem;
 	position: relative;
 	top: -2vh;
 	text-align: right;
 }
-@media(max-width:  375px){
+@media(max-width:  700px){
 	#contentD1 H1{
-		font-size: 1.7em;
+		font-size: 4rem;
 	}
 	#contentD1 H3{
-		font-size: .7em;
+		font-size: 2rem;
 	}
 	#contentD1 H4{
-		font-size: .5em;
+		font-size: 1.2rem;
 	}
 }
 
@@ -116,33 +96,33 @@
 
 #contentD2 H1{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 3.2em;
+	font-size: 4rem;
 	position: relative;
 	text-align: right;
 }
 #contentD2 H3{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1.5em;
+	font-size: 2rem;
 	position: relative;
 	top: -2vh;
 	text-align: right;
 }
 #contentD2 H4{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1em;
+	font-size:  1.5rem;
 	position: relative;
 	top: -2vh;
 	text-align: right;
 }
-@media(max-width:  375px){
+@media screen and (max-width:  700px){
 	#contentD2 H1{
-		font-size: 1.8em;
+		font-size: 4rem;
 	}
 	#contentD2 H3{
-		font-size: .8em;
+		font-size: 2rem;
 	}
 	#contentD2 H4{
-		font-size: .6em;
+		font-size: 1.5rem;
 	}
 }
 
@@ -180,48 +160,48 @@
 }
 #contentD4 H1{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 3.2em;
+	font-size: 4rem;
 	position: relative;
 	text-align: right;
 }
 #contentD4 H3{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1.5em;
+	font-size: 2rem;
 	position: relative;
 	top: -2vh;
 	text-align: right;
 }
 #contentD4 H4{
 	font-family:  "Yu Gothic Light", sans-serif;
-	font-size: 1em;
+	font-size: 1.5rem;
 	position: relative;
 	top: -2vh;
 	text-align: right;
 }
-@media(max-width:  375px){
+@media screen and (max-width:  700px){
 	#contentD4 H1{
-		font-size: 1.7em;
+		font-size: 4rem;
 	}
 	#contentD4 H3{
-		font-size: .7em;
+		font-size: 2rem;
 	}
 	#contentD4 H4{
-		font-size: .5em;
+		font-size: 1.2rem;
 	}
 }
 
 
-@media(max-width:  375px){
+@media screen and (max-width:  700px){
 	#contentD1{
-		height: 15vh;
+		height: 11rem;
 	}
 	#contentD2{
-		height: 15vh;
+		height: 11rem;
 	}
 	#contentD3{
-		height: 27vh;
+		height: 22rem;
 	}
 	#contentD4{
-		height: 15vh;
+		height: 11rem;
 	}
 }

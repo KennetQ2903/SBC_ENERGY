@@ -74,46 +74,55 @@ function title(){
 }
 
 async function actual(actualBtn){
+	let tit = document.getElementById('titHeader');
+	let actualId = actualBtn.id;
+	switch(actualId){
+		case "btnDashboard":
+			window.document.title = `Dashboard`;
+			tit.innerHTML = "Dashboard";					
+		break;
 
-			let actualId = actualBtn.id;
-			switch(actualId){
-				case "btnDashboard":
-					window.document.title = `Dashboard`;					
-				break;
+		case "btnUser":
+			window.document.title = `Usuario`;
+			tit.innerHTML = "Usuario";
 
-				case "btnUser":
-					window.document.title = `Usuario`;
+		break;
 
-				break;
+		case "btnGroup":
+			window.document.title = `Cuentas`;
+			tit.innerHTML = "Cuentas";
+		break;
 
-				case "btnGroup":
-					window.document.title = `Cuentas`;
-				break;
+		case "btnSuministros":
+			window.document.title = `Suministros`;
+			tit.innerHTML = "Suministros";
+		break;
 
-				case "btnSuministros":
-					window.document.title = `Suministros`;
-				break;
+		case "btnConsumo":
+			window.document.title = `Consumo`;
+			tit.innerHTML = "Consumo";
+		break;
 
-				case "btnConsumo":
-					window.document.title = `Consumo`;
-				break;
+		case "btnNegocio":
+			window.document.title = `Negocios`;
+			tit.innerHTML = "Negocios";
+		break;
 
-				case "btnNegocio":
-					window.document.title = `Negocios`;
-				break;
+		case "btnFacturacion":
+			window.document.title = `Facturacion`;
+			tit.innerHTML = "Facturacion";
+		break;
 
-				case "btnFacturacion":
-					window.document.title = `Facturacion`;
-				break;
+		case "btnBancos":
+			window.document.title = `Cuentas Bancarias`;
+			tit.innerHTML = "Cuentas Bancarias";
+		break;
 
-				case "btnBancos":
-					window.document.title = `Cuentas Bancarias`;
-				break;
-
-				case "btnCorreos":
-					window.document.title = `Correos`;
-				break;
-			}
+		case "btnCorreos":
+			window.document.title = `Correos`;
+			tit.innerHTML = "Correos";
+		break;
+	}
 }
 async function logOut(){
 	window.open('index.html');
