@@ -14,7 +14,7 @@
 	font-size: 2em;
 	font-family:  "Yu Gothic Light", sans-serif;
 }
-@media (max-width:  375px){
+@media screen and (max-width:  375px){
 	#TITBANCOS{
 		font-size: 5.5vw;
 	}
@@ -131,7 +131,7 @@
 	margin: 2%;
 	overflow: hidden;
 }
-@media (max-width:  375px){
+@media screen and (max-width:  375px){
 	#contentBancos{
 		height: 90vh;
 	}
@@ -144,6 +144,9 @@
 	width: 100%;
 	font-family:  "Yu Gothic Light", sans-serif;
 	color: white;
+}
+.demo thead{
+	text-align: center;
 }
 .demo th {
 	border:1px solid #C0C0C0;
