@@ -193,6 +193,9 @@ async function cargarGraficaConsumo(){
 }
 
 async function cargarGraficaClientes(){
+	let tit = document.getElementById('titHeader');
+	tit.innerHTML = "Dashboard";
+
 	let grafCl = document.getElementById('grafClientes');
 	new Chart(grafCl, {
 		type: "polarArea",
@@ -263,12 +266,14 @@ function posPuntosSuministros(){
 	document.getElementById('btnGruposSuministros').style.borderColor = "rgba(0, 0, 0, 0.4)";
 }
 
-function posInicial(){
+
+async function posInicial(){
 window.document.title = `Dashboard`;
 $('html, body').animate({
 		scrollTop: $("#menuDashboard").offset().top
 	}, 500);
 }
+
 
 function mostrarSpan(){
 	let homeC = document.getElementById("home");
